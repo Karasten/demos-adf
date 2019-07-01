@@ -1,5 +1,5 @@
 {
-	"name": "AzureBlobFSDataDestination1",
+	"name": "AzureBlobFSDataInterfaceIn",
 	"properties": {
 		"description": "It describes the destination store.",
 		"linkedServiceName": {
