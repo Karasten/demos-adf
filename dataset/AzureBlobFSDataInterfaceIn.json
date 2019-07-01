@@ -22,10 +22,7 @@
 				"treatEmptyAsNull": true
 			},
 			"fileName": "",
-			"folderPath": {
-				"value": "@dataset().path",
-				"type": "Expression"
-			}
+			"folderPath": "demodatalake/interfaces/in"
 		}
 	}
 }

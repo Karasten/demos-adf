@@ -17,9 +17,11 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"fieldList": [
-						"childItems"
-					]
+					"dataset": {
+						"referenceName": "AzureBlobFSDataSource_CP",
+						"type": "DatasetReference"
+					},
+					"fieldList": []
 				}
 			},
 			{
@@ -84,7 +86,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "AzureBlobFSDataDestination1",
+									"referenceName": "AzureBlobFSDataInterfaceIn",
 									"type": "DatasetReference",
 									"parameters": {
 										"path": {
