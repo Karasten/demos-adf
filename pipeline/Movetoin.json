@@ -17,16 +17,6 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"dataset": {
-						"referenceName": "AzureBlobFSDataSource_Folder1",
-						"type": "DatasetReference",
-						"parameters": {
-							"FolderPath": {
-								"value": "@pipeline().parameters.FolderPath_SourceStore",
-								"type": "Expression"
-							}
-						}
-					},
 					"fieldList": [
 						"childItems"
 					]
@@ -78,7 +68,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "AzureBlobFSDataSource_File1",
+									"referenceName": "AzureBlobFSDataSource_CP",
 									"type": "DatasetReference",
 									"parameters": {
 										"path": {
@@ -108,44 +98,6 @@
 									}
 								}
 							]
-						},
-						{
-							"name": "DeleteAFile",
-							"description": "Delete a file from the source store",
-							"type": "Delete",
-							"dependsOn": [
-								{
-									"activity": "CopyAFile",
-									"dependencyConditions": [
-										"Succeeded"
-									]
-								}
-							],
-							"policy": {
-								"timeout": "7.00:00:00",
-								"retry": 0,
-								"retryIntervalInSeconds": 30,
-								"secureOutput": false,
-								"secureInput": false
-							},
-							"userProperties": [],
-							"typeProperties": {
-								"dataset": {
-									"referenceName": "AzureBlobFSDataSource_File1",
-									"type": "DatasetReference",
-									"parameters": {
-										"path": {
-											"value": "@pipeline().parameters.FolderPath_SourceStore",
-											"type": "Expression"
-										},
-										"filename": {
-											"value": "@item().name",
-											"type": "Expression"
-										}
-									}
-								},
-								"enableLogging": false
-							}
 						}
 					]
 				}
