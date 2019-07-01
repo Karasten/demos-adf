@@ -21,10 +21,7 @@
 				"type": "TextFormat",
 				"treatEmptyAsNull": true
 			},
-			"fileName": {
-				"value": "@dataset().filename",
-				"type": "Expression"
-			},
+			"fileName": "",
 			"folderPath": {
 				"value": "@dataset().path",
 				"type": "Expression"
