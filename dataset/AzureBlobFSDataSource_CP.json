@@ -1,5 +1,5 @@
 {
-	"name": "AzureBlobFSDataSource_File1",
+	"name": "AzureBlobFSDataSource_CP",
 	"properties": {
 		"description": "It describes the file in the data source store. ",
 		"linkedServiceName": {
@@ -17,6 +17,10 @@
 		"annotations": [],
 		"type": "AzureBlobFSFile",
 		"typeProperties": {
+			"format": {
+				"type": "JsonFormat",
+				"filePattern": "setOfObjects"
+			},
 			"fileName": {
 				"value": "@dataset().filename",
 				"type": "Expression"
