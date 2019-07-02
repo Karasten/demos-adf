@@ -1,0 +1,15 @@
+{
+	"name": "AzureSqlDatabaseDestinationStore1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "natexisdemo_database",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "[dbo].[sales]"
+		}
+	}
+}
