@@ -1,14 +1,18 @@
 {
 	"name": "StagingParquet1",
 	"properties": {
+		"linkedServiceName": {
+			"referenceName": "natexisdemo",
+			"type": "LinkedServiceReference"
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
+				"type": "AzureBlobFSLocation",
 				"fileName": "file.parquet",
 				"folderPath": "dataflow",
-				"container": "staging"
+				"fileSystem": "staging"
 			},
 			"compressionCodec": "snappy"
 		},
