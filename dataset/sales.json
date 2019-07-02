@@ -1,0 +1,79 @@
+{
+	"name": "sales",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "natexisdemo_database",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "region",
+				"type": "varchar"
+			},
+			{
+				"name": "country",
+				"type": "varchar"
+			},
+			{
+				"name": "item_type",
+				"type": "varchar"
+			},
+			{
+				"name": "sales_channel",
+				"type": "varchar"
+			},
+			{
+				"name": "order_priority",
+				"type": "char"
+			},
+			{
+				"name": "order_date",
+				"type": "date"
+			},
+			{
+				"name": "order_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ship_date",
+				"type": "date"
+			},
+			{
+				"name": "unit_sold",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "unit_price",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "unit_cost",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "total_revenue",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "total_cost",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "total_profit",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"tableName": "[dbo].[sales]"
+		}
+	}
+}

@@ -21,8 +21,8 @@
 				"type": "JsonFormat",
 				"filePattern": "setOfObjects"
 			},
-			"fileName": "",
-			"folderPath": "",
+			"fileName": "1500000 Sales Records.csv",
+			"folderPath": "demodatalake/myopendata",
 			"key": {
 				"value": "@dataset().filename",
 				"type": "Expression"
