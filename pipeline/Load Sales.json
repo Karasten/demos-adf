@@ -17,7 +17,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "AzureBlobFSDataSource_CP",
+						"referenceName": "Salesfile",
 						"type": "DatasetReference"
 					},
 					"fieldList": []
@@ -47,7 +47,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "AzureBlobFSDataSource_CP",
+						"referenceName": "Salesfile",
 						"type": "DatasetReference"
 					}
 				],

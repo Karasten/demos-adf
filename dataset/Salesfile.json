@@ -1,5 +1,5 @@
 {
-	"name": "AzureBlobFSDataSource_CP",
+	"name": "Salesfile",
 	"properties": {
 		"description": "It describes the file in the data source store. ",
 		"linkedServiceName": {
