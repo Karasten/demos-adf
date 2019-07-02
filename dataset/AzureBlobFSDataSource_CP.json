@@ -21,14 +21,8 @@
 				"type": "JsonFormat",
 				"filePattern": "setOfObjects"
 			},
-			"fileName": {
-				"value": "@dataset().filename",
-				"type": "Expression"
-			},
-			"folderPath": {
-				"value": "@dataset().path",
-				"type": "Expression"
-			},
+			"fileName": "",
+			"folderPath": "",
 			"key": {
 				"value": "@dataset().filename",
 				"type": "Expression"
