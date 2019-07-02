@@ -17,7 +17,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "Salesfile",
+						"referenceName": "sales_file",
 						"type": "DatasetReference"
 					},
 					"fieldList": []
@@ -47,13 +47,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Salesfile",
+						"referenceName": "sales_file",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "sales",
+						"referenceName": "sales_table",
 						"type": "DatasetReference"
 					}
 				]

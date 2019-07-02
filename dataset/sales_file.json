@@ -1,5 +1,5 @@
 {
-	"name": "Salesfile",
+	"name": "sales_file",
 	"properties": {
 		"description": "It describes the file in the data source store. ",
 		"linkedServiceName": {
